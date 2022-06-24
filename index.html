@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>Sound Identification Web App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body class="bg-info">
+    <div class="container-fluid bg-info">
+    <div class="col-xs-12 header_div text-center bg-warning mt-4 p-5 bg-primary text-white rounded">
+      <button class="btn btn-warning" data-bs-toggle="tooltip" title="This Web Application uses AI." data-bs-placement="right"><h2>Sound Identification Web App</h2></button>
+      <p class="lead">Note: Make different sounds such as clapping, humming, or banging on a wooden table to make the aliens dance.</p>
+    </div>
+    <div class="main_div bg-secondary">
+      <center>
+        <br>
+        <button class="btn btn-outline-info btn-block" data-bs-toggle="tooltip" title="Click on me to start!" data-bs-placement="right" onclick="startClassification()">Start</button>
+        <div>
+          <br>
+          <button class="btn btn-secondary bg-secondary text-secondary" onclick="glitch()"></button>
+        </div>
+        <br>
+        <h3>I hear - <span id="i-hear-this"></span></h3>
+        <h3>Percent of Accuracy - <span id="accuracy"></span></h3>
+        <img src="aliens-01.png" id="alien1" width="300" height="300">
+        <img src="aliens-02.png" id="alien2" width="300" height="300">
+        <img src="aliens-03.png" id="alien3" width="300" height="300">
+        <img src="aliens-04.png" id="alien4" width="300" height="300">
+        <br>
+        <br>
+        <br>
+      </center>
+    </div>
+    <div class="footer_div">
+      <p class="lead text-dark">Developed by Website Creator Ajay B.</p>
+    </div>
+    </div>
+<script src="main.js"></script>
+  </body>
+</html>
